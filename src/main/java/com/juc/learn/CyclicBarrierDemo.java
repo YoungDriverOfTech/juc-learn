@@ -24,9 +24,7 @@ public class CyclicBarrierDemo {
 
                 try {
                     barrier.await();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (BrokenBarrierException e) {
+                } catch (InterruptedException | BrokenBarrierException e) {
                     e.printStackTrace();
                 }
                 System.out.println("等其他人到了，我们才能继续");
