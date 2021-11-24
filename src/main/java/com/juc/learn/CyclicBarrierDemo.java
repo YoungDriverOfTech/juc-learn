@@ -28,7 +28,6 @@ public class CyclicBarrierDemo {
                     e.printStackTrace();
                 }
                 System.out.println("等其他人到了，我们才能继续");
-
             }).start();
         }
     }
